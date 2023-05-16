@@ -1,0 +1,12 @@
+<view class="all"></view>
+<view class="showtable" style="display: flex;align-items: flex-start;justify-content: center;flex-direction: column;padding: 5%;font-size: large;margin-bottom: 13rpx;margin-top: 1%;" wx:for="{{ne}}" data-id="{{item._id}}" data-time="{{item.time}}" bindtap='login' data-imgOne="{{item.imgOne}}">
+
+    <view>预约状态:{{item.status}}</view>
+    <view>预约日期:{{item.time}}</view>
+    <view>预约人:{{item.name}}</view>
+
+    <button style="width: 250rpx;">订单详情</button>
+
+
+
+</view>

@@ -1,0 +1,14 @@
+/* pages/list/list.wxss */
+page{
+    background-color:#eeeeee71  
+}
+.showtable {
+    display: flex;
+    border: 2rpx rgb(230, 231, 231) solid;
+    padding: 10rpx;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: white;
+
+}

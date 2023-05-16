@@ -1,0 +1,70 @@
+<!--pages/addtask/addtask.wxml-->
+<scroll-view scroll-y style="height: 1350px;">
+<view class="body1" style="height:  70%;width: 100%;"  >
+<form bindsubmit="handlerSubmit">
+<view  class="inpname" style="font-size:20px;display: flex;align-items: center;" >
+	 <label for='name' style="font-size: 20px;display: flex;justify-content: center;align-items: center;"><image src="../../images/icons/ppo4.png" style="height: 50rpx ;width: 50rpx;"></image></label>
+     <input type="text"id='name' type="text" maxlength="32" cursor-spacing="180px" placeholder="输入姓名" name='name' model:value="{{name}}" bindinput="inpname" />
+   </view>
+  <view class="number"style="font-size:20px;display: flex;align-items: center;">
+	  <label for="number" style="font-size: 40rpx;display: flex;justify-content: center;align-items: center;"><image src="../../images/icons/mess.png" style="height: 50rpx ;width: 50rpx;"></image></label>
+      <input type="number" maxlength="32" id ="number" cursor-spacing="180px"   placeholder="输入学号" name='number'  model:value="{{number}}"bindinput="inpnumber"/>
+ </view>
+ <view class="phone" style="font-size:20px;display: flex;align-items: center;">
+	  <label for="phone" style="font-size: 40rpx;display: flex;justify-content: center;align-items: center;"><image src="../../images/icons/phone.png" style="height: 50rpx ;width: 50rpx;"></image></label>
+      <input type="number" maxlength="11" id ="phone" name='phone'cursor-spacing="180px"   placeholder="输入手机号"   model:value="{{phone}}"bindinput="inpphone"/>
+ </view>
+ <view class="wxid"style="font-size:20px;display: flex;align-items: center;">
+	  <label for="wxid" style="font-size: 40rpx;display: flex;justify-content: center;align-items: center;"><image src="../../images/icons/mess.png" style="height: 50rpx ;width: 50rpx;"></image></label>
+      <input type="text" maxlength="32" id ="wxid" name='wxid'cursor-spacing="180px"   placeholder="输入微信号"   model:value="{{wxid}}"bindinput="inpwxid"/>
+ </view>
+ <view class="dorc" style="font-size:20px;display: flex;align-items: center;">
+	  <label for="dorc" style="font-size: 40rpx;display: flex;justify-content: center;align-items: center;"><image src="../../images/icons/position.png" style="height: 50rpx ;width: 50rpx;"></image></label>
+      <input type="text" maxlength="32" id ="dorc" name='address'cursor-spacing="180px"   placeholder="输入宿舍或地址"   model:value="{{address}}"bindinput="inpaddress"/>
+ </view>
+ 
+ <view class="dorc" style="font-size:20px;display: flex;align-items: center;">
+	  <label for="dorc" style="font-size: 40rpx;display: flex;justify-content: center;align-items: center;"><image src="../../images/icons/school.png" style="height: 50rpx ;width: 50rpx;"></image></label>
+      <input type="text" maxlength="8" name='yuanxi' id ="dorc" cursor-spacing="180px"   placeholder="输入所在院系"   model:value="{{yuanxi}}"bindinput="inpyuanxi"/>
+ </view>
+
+ <view class="dorc" style="font-size:30px;display: flex;align-items: center;">
+	  <label for="dorc" style="font-size: 40rpx;display: flex;justify-content: center;align-items: center;">校区：{{school[0]}}</label>
+
+
+ </view>
+
+
+
+
+
+
+ <view class="img-view">
+    <view class="show" wx:for="{{imgOne}}" wx:key="_id" style="margin:5%">
+        <image src="{{item}}" mode="aspectFill" data-index="{{index}}"bindtap="previewImg" ></image>
+        <view class="upload_img" >
+        <image class="del_img" src="../../images/icons/close.png "data-index="{{index}}" bindtap="reBackImg"></image>
+        </view>
+    </view>
+    <view class="up" wx:if="{{imgOneSwitch}}" bindtap="onChooseOne">+</view>
+</view>
+
+
+<view class="detail">
+ <text>问题描述</text>
+ <textarea name='detail'  placeholder="请输入你的问题（电脑概况）" maxlength="-1"  bindinput="inpdetail"></textarea>
+
+ <view style="width: 200rpx;color:dodgerblue;"bindtap='yuyue'>订阅</view>
+
+
+
+ </view>
+
+</form>
+<view class='add' style="width:auto;height: 200rpx;justify-content: center;align-items: center;display: flex;">
+    <button form-type="submit"  form-type="submit" bindtap='login' style="background-color:rgb(255 215 0);width: 90%;height: 120rpx; font-size:large;border-radius: 25%; justify-content: center;align-items: center;display: flex;font-size: 50rpx;">立即预约</button>
+
+ </view>
+
+</view>
+</scroll-view>

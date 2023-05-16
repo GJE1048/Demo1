@@ -1,0 +1,65 @@
+<!--pages/addtask/addtask.wxml-->
+<scroll-view scroll-y style="height: 1450px;">
+<view class="body1" style="height:  70%;width: 100%;">
+<form bindsubmit="handlerSubmit">
+    <view  class="inpname" style="font-size:30px;display: flex;align-items: center;" >
+	 <label for='name' style="font-size: 33rpx;display: flex;justify-content: center;align-items: center;color: #09090c;"><image src="../images/icons/ppo4.png" style="height: 50rpx ;width: 50rpx;"></image><view style="color: black;"class="textarea" style="height: 33rpx;color: black;">姓名：{{list.name}}</view></label>
+
+   </view>
+  <view class="number"style="font-size:30px;display: flex;align-items: center;">
+	  <label for="number" style="font-size: 33rpx;display: flex;justify-content: center;align-items: center;color: #09090c;"><image src="../images/icons/main.png" style="height: 50rpx ;width: 50rpx;"></image><view style="color: black;"class="textarea" style="height: 33rpx;color: black;">学号：{{list.number}}</view></label>
+
+ </view>
+ <view class="phone" style="font-size:30px;display: flex;align-items: center;">
+	  <label for="phone" style="font-size: 33rpx;display: flex;justify-content: center;align-items: center;color: #09090c;"><image src="../images/icons/phone.png" style="height: 50rpx ;width: 50rpx;"></image><view style="color: black;"class="textarea" style="height: 33rpx;color: black;">手机：{{list.phone}}</view></label>
+
+ </view>
+ <view class="wxid"style="font-size:30px;display: flex;align-items: center;">
+	  <label for="wxid" style="font-size: 33rpx;display: flex;justify-content: center;align-items: center;color: #09090c;"><image src="../images/icons/mess.png" style="height: 50rpx ;width: 50rpx;"></image><view style="color: black;"class="textarea" style="height: 33rpx;color: black;">微信：{{list.wxid}}</view></label>
+
+ </view>
+ <view class="dorc" style="font-size:30px;display: flex;align-items: center;">
+	  <label for="dorc" style="font-size: 33rpx;display: flex;justify-content: center;align-items: center;color: #09090c;"><image src="../images/icons/position.png" style="height: 50rpx ;width: 50rpx;"></image><view style="color: black;"class="textarea" style="height: 33rpx;color: black;">地址：{{list.address}}</view></label>
+
+ </view>
+ 
+ <view class="dorc" style="font-size:30px;display: flex;align-items: center;">
+	  <label for="dorc" style="font-size: 33rpx;display: flex;justify-content: center;align-items: center;color: #09090c;"><image src="../images/icons/main.png" style="height: 50rpx ;width: 50rpx;"></image><view style="color: black;"class="textarea" style="height: 33rpx;color: black;">院系：{{list.yuanxi}}</view></label>
+
+ </view>
+
+ <view class="dorc" style="font-size:30px;display: flex;align-items: center;">
+	  <label for="dorc" style="font-size: 33rpx;display: flex;justify-content: center;align-items: center;color: #09090c;"><image src="../images/icons/school.png" style="height: 50rpx ;width: 50rpx;"></image><view style="color: black;"class="textarea" style="height: 33rpx;color: black;"><label>校区：松山湖校区</label></view></label>
+ </view>
+     <view class="img-view">
+     <!--
+<view class="show" wx:for="{{list.imgOne}}" wx:key="_id">
+        <image src="{{item}}" mode="aspectFill" data-index="{{index}}"bindtap="previewImg"></image>
+
+    </view>
+
+    iimgOne[index]
+    //原先写法
+-->
+    <view class="show" wx:for="{{imgOne}}"  wx:for-item="item" style="margin:5%">
+        <image src="{{item}}" mode="aspectFill" data-index="{{index}}"bindtap="previewImg" ></image>
+
+    </view>
+ <!--
+    <view class="show" wx:for="{{llist.fileIds}}" wx:key="fileIds">
+        <image src="{{item}}" mode="aspectFill" data-index="{{index}}"bindtap="previewImg"></image>
+
+    </view>-->
+</view>
+<view class="detail" style="align-items: center;justify-content: center;">
+ <text style="font-size: 33rpx;display: flex;justify-content: center;align-items: center;color: #09090c;">问题描述</text>
+ <view class="textarea" style="justify-content: center;align-items: center;display: flex;margin-left: 4%;"><label>{{list.detail}}</label></view>
+ </view>
+
+
+
+</form>
+
+
+</view>
+</scroll-view>

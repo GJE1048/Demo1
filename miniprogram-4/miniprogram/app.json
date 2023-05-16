@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/home/hime",
+        "pages/login/login",
+        "pages/addtask/addtask",
+        "pages/body/body",
+        "detail/detail",
+        "pages/admin/admin",
+        "pages/list/list",
+        "pages/detail1/detail1"
+    ],
+
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

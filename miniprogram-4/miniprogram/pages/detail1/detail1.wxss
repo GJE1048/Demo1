@@ -1,0 +1,107 @@
+/* detail/detail.wxss */
+/* pages/addtask/addtask.wxss */
+
+.imge{
+    display: flex;/*横向分布*/
+    flex-wrap: wrap;
+    border-left: 1rpx solid #efefef;/*左边框线的颜色和大小*/
+    border-top: 1rpx solid #efefef;/*上边框线的颜色和大小*/
+}
+.imge-item{
+    height: 200rpx;/**/
+   width: 33.33%;/**/
+   display: flex;/**/
+   flex-direction: column;/**/
+   align-items: center;
+   justify-content: center;/*文本和图标在自己的item里面居中*/
+   border-right: 1rpx solid #efefef;/*右边框线的颜色和大小*/
+   border-bottom: 1rpx solid #efefef;/*下边框线的颜色和大小*/
+   box-sizing: border-box;/*box的布置方式*/
+}
+.imge-item image{
+    border-radius: 10px;
+    height: 90px;/*图片的高度*/
+    width: 100px;/*图片的宽度*/
+}
+
+.add{
+    bottom: 3%;
+    display: flex;
+    position: fixed;
+    left: 2%;
+    right: 2%;
+
+
+}
+.page{
+    position: relative;
+}
+.img-view {
+	width: 710rpx;
+	margin: 20rpx 20rpx;
+	/* background-color: red; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.img-view .up, .img-view .show {
+	margin: 6rpx;
+}
+
+.img-view .up {
+	height: 220rpx;
+	width: 220rpx;
+	background-color: #ededed;
+	line-height: 200rpx;
+	text-align: center;
+	font-size: 100rpx;
+	color: #bfbfbf;
+}
+.textarea{
+        
+        border-width: 1rpx;
+        border-color:#bfbfbf;
+        border-style: solid;
+        border-radius: 10rpx;
+        width: 600rpx;
+        margin-top: 20rpx;
+        padding: 3%;
+        margin-right: 4%;
+
+}
+.img-view .show {
+	width: 220rpx;
+	height: 220rpx;
+	/* background-color: red; */
+    position: relative;
+}
+
+.upload_img {
+	position: absolute;
+	top: 0rpx;
+	right: 0rpx;
+
+    width: 30rpx;
+    height: 30rpx;
+	background-color: #fff;
+	
+}
+
+.img-view .show image {
+	width: 100%;
+	height: 100%;
+}
+input{
+        border-width: 1rpx;
+        border-color: var(--color_grey_dd);
+        border-style: solid;
+        border-radius: 10rpx;
+        width: 99%;
+        margin-top: 20rpx;
+        padding: 3%;
+
+}
+view{
+    padding: 10rpx;
+}

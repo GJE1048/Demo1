@@ -1,0 +1,110 @@
+/* pages/admin/admin.wxss */
+/* pages/home/home.wxss */
+page{
+    background-color:rgb(240, 240, 240)
+}
+.headBg{
+    height:300rpx;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(93,190,138);
+    border-bottom-left-radius:25%;
+    border-bottom-right-radius: 25%;
+}
+.bodytop{
+    margin: auto;
+    margin-top: 100rpx;
+    justify-content: space-around;
+    display: flex;
+    background-color: white;
+    height: 50%;
+    align-items: center;
+    border-radius: 3%;
+    transform: translateY(-75rpx);
+}
+.linecol{
+    width:1rpx;
+    height:75%;
+    background-color: #f3f3f3;
+}
+.bodytop1{
+    border:2rpx solid #fff;
+    border-radius: 25%;
+    padding:25rpx;
+    background-color: white;
+}
+.bodytop2{
+    border:2rpx solid #fff;
+    border-radius: 25%;
+    padding:25rpx;
+    background-color: white;
+}
+.body{
+    margin-top: 200rpx;
+    
+}
+.box1{
+
+    display: flex;
+    border: 2rpx white solid;
+    padding: 30rpx;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: white;
+}
+.arrow{
+    width: 10px;
+            height: 10px;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            /* 右旋转45° */
+            transform: rotate(45deg);
+            
+}
+.click{
+    color: rgb(93,190,138);
+}
+.line{
+    width:90%;
+    height:5rpx;
+    background-color: #f3f3f3;
+    margin:0 auto;
+    text-align: center;
+}
+/*线*/
+.set{
+        border-radius: 2rpx solid #f3f3f3;
+        height:60rpx;
+        width:60rpx;
+        top:0;
+        left:15rpx;
+        z-index:100;
+        position: fixed;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 30%;
+        flex:1;
+        display: flex;
+}
+.set1{
+    width:60rpx;
+    height:60rpx;
+}
+.headpho button{
+    background-color: rgb(93,190,138);
+    
+}
+.headpho image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 2%;
+}
+.headpho input{
+    margin: auto;
+    transform: translateX(130rpx);
+    justify-content: center;
+    align-items: center;
+}
+
+

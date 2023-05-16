@@ -1,0 +1,30 @@
+<!--pages/home/home.wxml-->
+
+<view class="headBg">
+    <view class="set" bindtap='set' style="padding-left:5% ;">
+        <image src="../../images/icons/close.png" class="set1"></image>
+
+    </view>
+    <view class="content">
+
+        <view class="mymessage">
+            <view class='headpho' bindtap='getopenid'>
+                <button open-type="chooseAvatar" class="avatar-wrapper" bind:chooseavatar="onChooseAvatar">
+                    <image class="avatar" src="{{avatarUrl}}"></image>
+                </button>
+                <input type="nickname" class="weui-input" placeholder="请输入昵称"/>
+            </view>
+        </view>
+
+    </view>
+</view>
+
+<view class="body">
+    <view class="box1" hover-class="click" bindtap="orderlist">订单管理
+        <view class="arrow"></view>
+    </view>
+    <view class="line"></view>
+
+    
+    <view class="line"></view>
+</view>

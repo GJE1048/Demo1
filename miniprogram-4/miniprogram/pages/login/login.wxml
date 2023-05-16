@@ -1,0 +1,44 @@
+<!--pages/login/login.wxml-->
+<view>
+    <form bindsubmit="handlerSubmit">
+
+        <image src="../../images/icons/xiu.png" style="margin-left: 7%;"></image>
+
+
+        <view class="form" style="display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+            <view class="zhangHao">
+                <view class="inpname" style="font-size:30px;">
+                    <image src="../../images/icons/people.png" style="width: 60rpx;height: 60rpx;"></image>
+                    <label for='name'></label>
+                    <input id='name' type="text" maxlength="8" cursor-spacing="180px" placeholder="输入登录账号" model:value="{{name}}" bindinput="inpname" />
+                </view>
+            </view>
+            <view style="width: 89%;height: 1rpx;background-color: black;margin-left: 1%;margin-top: 3%;"></view>
+            <view class="password">
+                <image src="../../images/icons/password1.png" style="width: 60rpx;height: 60rpx;"></image>
+                <view class="inpnumber" style="font-size:30px;">
+                    <label for="num"></label>
+                    <input type="number" maxlength="8" id="num" cursor-spacing="180px" placeholder="输入密码" model:value="{{number}}" bindinput="inpnumber" />
+                </view>
+            </view>
+        </view>
+
+    </form>
+
+
+
+    <view style="width: 90%;height: 1rpx;background-color: black;margin-left: 5%;margin-top: 3%;"></view>
+
+
+
+    <view style="display: flex;justify-content: space-around;align-items: center;">
+        <view class='login'>
+            <button bindtap='login' class="btn btn-grad1" style="color:rgb(223, 80, 70); font-size:large;">注册</button>
+        </view>
+        <view class='loginin'>
+            <button bindtap='loginin'  class="testBt" style="color:rgb(43, 173, 76); font-size:large;" >登录</button>
+        </view>
+    </view>
+
+
+</view>
